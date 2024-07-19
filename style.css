@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@900&display=swap');
+body{
+    margin: 0;
+    background-color: #000;
+    color: #eee;
+    font-family: Poppins;
+}
+header{
+    border-bottom: 1px solid #eee2;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    position: relative;
+    z-index: 10;
+}
+.navbar a{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.0rem;
+    color: #fff;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+  }
+  .navbar a:hover,
+  .navbar a:active{
+    color:  rgb(84,71,59);;
+    border-bottom: 3px solid  rgb(84,71,59);;
+  }
+  #menu-icon{
+    font-size: 3.6rem;
+    color: #fff;
+    display: none;
+  }
+.banner{
+    background-image: 
+    linear-gradient(
+        to bottom, #0009, transparent, #0009
+    ),
+    url(image/846480.png);
+    width: 100%;
+    height: 100vh;
+    margin-top: -70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner .content{
+    position: absolute;
+    inset: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Gabarito', cursive;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.banner .content div:nth-child(1){
+    font-size: 3em;
+}
+.banner .content div:nth-child(2){
+    font-size: 20em;
+    color: #dae2db;
+}
+.banner .content div button{
+    border: 1px solid #eee7;
+    background-color: transparent;
+    color: #eee;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+}
+@media screen and (max-width: 1200px) {
+    .banner .content{
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .banner .content{
+        font-size: 7px;
+    }
+}
+.div button :hover{
+    transform: translateX(10px) scale(1.2);
+
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background:white;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: black;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover
+{
+  letter-spacing: 6px;
+  box-shadow: 0 0 25px rgb(255, 8, 0);
+}
+
+.social
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    font-family: 'poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+}
+.wrapper h1{
+    font-size: 3em;
+
+    margin: 25px;
+}
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(84,71,59);
+    margin: 10px 4px;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+}
+.card i{
+    margin: 20px;
+    color: #ffffff;
+}
+.card h2{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+.card p{
+    color: #6c757d;
+    text-align: center;
+}
+.card:hover i,
+.card:hover p{
+    color: #fff;
+}
+.card:hover h2{
+    font-weight: 600;
+}
+.card:nth-child(1):hover{
+    background: linear-gradient(45deg,
+    rgb(98,101,84) 0% ,
+    rgb(98,101,84)100% ) ,
+                                    url('bg.jpg');
+                                    background-size: cover;
+}
+.card:nth-child(2):hover{
+    background: linear-gradient(45deg,
+    rgb(98,101,84) 0% ,
+    rgb(98,101,84)100% ) ,
+                                    url('bg2.jpg');
+                                    background-size: cover;
+}
+.card:nth-child(3):hover{
+    background: linear-gradient(45deg,
+    rgb(98,101,84) 0% ,
+    rgb(98,101,84)100% ) ,
+                                    url('bg3.jpg');
+                                    background-size: cover;
+}
+@media(max-width:991px){
+    .wrapper{
+        padding: 25px;
+    }
+    .wrapper h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    .content-box{
+        flex-direction: column;
+        width: 100%;
+    }
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+    }
+}
